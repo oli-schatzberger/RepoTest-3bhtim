@@ -34,6 +34,10 @@ class quicksort {
                 swap(arr, i, j);
             }
         }
+        
+
+
+        //swapping is overrated tbh
         swap(arr, i + 1, e);
         return (i++);
     }
@@ -57,7 +61,7 @@ class quicksort {
     // method to print an array
     static void printArray(int[] arr, int size) {
         for (int i = 0; i < size; i++)
-            System.out.print(arr[i] + " ");
+            System.out.print(" " +arr[i] );
 
         System.out.println();
     }
@@ -72,6 +76,8 @@ class quicksort {
         for (int i = 0; i < p; i++) {
             arr[i] = sc.nextInt();
         }
+        System.out.println("Unsorted array: ");
+        printArray(arr, p);
         quickSort(arr, 0, p - 1);
         System.out.println("Sorted array: ");
         printArray(arr, p);
