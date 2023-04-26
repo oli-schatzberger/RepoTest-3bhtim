@@ -80,7 +80,7 @@ class quicksort {
         System.out.println("Unsorted array: ");
         printArray(arr, p);
         quickSort(arr, 0, p - 1);
-        System.out.println("Sorted array: ");
+        //Schüler 3
         printArray(arr, p);
     }
 }
